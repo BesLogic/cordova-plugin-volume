@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-volume",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-volume",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BesLogic/cordova-plugin-volume.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "BesLogic Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BesLogic/cordova-plugin-volume/issues"
+  },
+  "homepage": "https://github.com/BesLogic/cordova-plugin-volume#readme"
+}
