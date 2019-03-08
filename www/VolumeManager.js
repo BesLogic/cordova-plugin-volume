@@ -1,6 +1,6 @@
 var exec = require('cordova/exec');
 
-exports.getVolume = function (arg0, success, error) {
+exports.getVolume = function (success, error) {
     exec(success, error, 'VolumeManager', 'getVolume', []);
 };
 
