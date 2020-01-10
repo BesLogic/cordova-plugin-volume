@@ -41,6 +41,7 @@
 {
     CDVPluginResult* pluginResult = nil;
 
+    float volume = [[command argumentAtIndex:0] floatValue];
     [self currentSystemVolumeSlider].value = volume;
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:YES];
