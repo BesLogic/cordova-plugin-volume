@@ -21,7 +21,7 @@
 
 @implementation VolumeControl
 
-+ (UISlider *)currentSystemVolumeSlider {
+- (UISlider *)currentSystemVolumeSlider {
     static UISlider * volumeViewSlider = nil;
     if(volumeViewSlider == nil) {
         MPVolumeView * volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(10, 50, 200, 4)];
