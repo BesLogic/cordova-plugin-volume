@@ -53,7 +53,9 @@
     CDVPluginResult* pluginResult = nil;
     DLog(@"getVolume");
 
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDouble:[[self currentSystemVolumeSlider] value]];
+    float volume = [[self currentSystemVolumeSlider] value];
+
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDouble:(double)volume];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
