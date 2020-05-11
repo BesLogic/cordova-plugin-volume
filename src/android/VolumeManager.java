@@ -17,7 +17,7 @@ public class VolumeManager extends CordovaPlugin {
 
     public static final String SET = "setVolume";
 	public static final String GET = "getVolume";
-    private static final String TAG = "VolumeControl";
+    private static final String TAG = "VolumeManager";
 
     private Context context;
 	private AudioManager manager;

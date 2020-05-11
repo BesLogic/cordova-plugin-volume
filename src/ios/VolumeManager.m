@@ -1,4 +1,4 @@
-/********* VolumeControl.m Cordova Plugin Implementation *******/
+/********* VolumeManager.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@
     #define DLog(...)
 #endif
 
-@interface VolumeControl : CDVPlugin {
+@interface VolumeManager : CDVPlugin {
   // Member variables go here.
 }
 
@@ -19,7 +19,7 @@
 - (void)getVolume:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation VolumeControl
+@implementation VolumeManager
 
 - (UISlider *)currentSystemVolumeSlider {
     static UISlider * volumeViewSlider = nil;
